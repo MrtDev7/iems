@@ -1,0 +1,26 @@
+
+
+
+#install maix
+yum install -y mailx
+
+#creating email body
+echo "dance , dance!" > body.txt
+
+
+#start postfix
+postfix start
+
+#install sendmail
+yum install -y sendmail sendmail-cf m4
+
+
+#restart sendmail service
+
+
+service sendmail restart
+
+
+exit
+
+
